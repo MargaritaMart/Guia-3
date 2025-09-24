@@ -1,0 +1,75 @@
+{
+    "version": 1,
+    "name": "Input Actions",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "ab1cdc21-0410-43c7-b63c-0233c7fe311f",
+            "actions": [
+                {
+                    "name": "move",
+                    "type": "Value",
+                    "id": "b88e3f9e-36b9-4f01-99a9-7e953d86b9c8",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Tap",
+                    "type": "Button",
+                    "id": "bbf2f312-abc7-4ce3-bc30-968c8cf668e0",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PointerPosition",
+                    "type": "Value",
+                    "id": "a5e63f6d-7dcb-4bfa-9cd1-8a9acba504bd",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "348e8ff5-5a74-4e28-814f-91064974df2d",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b9d5cffa-e4c8-41b7-9981-f294f3f30186",
+                    "path": "<Pointer>/press",
+                    "interactions": "Tap",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Tap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3b2b9da8-01df-451a-afd3-f6f6990917d1",
+                    "path": "<Pointer>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PointerPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
