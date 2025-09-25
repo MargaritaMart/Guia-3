@@ -1,7 +1,5 @@
-using System.Numerics;
 using UnityEngine;
 using UnityEngine.InputSystem.EnhancedTouch; // Se importa el paquete para el soporte de gestos multitouch
-using UnityEngine.Rendering;
 using Touch = UnityEngine.InputSystem.EnhancedTouch.Touch;
 // Alias para usar touch directamente desde enhancedtouch y no confundir con unityengine.touch
 
@@ -10,10 +8,10 @@ using Touch = UnityEngine.InputSystem.EnhancedTouch.Touch;
 public class PinchZoom : MonoBehaviour
 {
     public float zoomSpeed = 0.15f; // Velocidad de respuesta del zoom (que tan rapido cambia)
-    public float fovMin = 30f: // Valor minimo de field of view (camara en perspectiva)
+    public float fovMin = 30f; // Valor minimo de field of view (camara en perspectiva)
     public float fovMax = 75f; // Valor maximo de field of view (camara en perspectiva)
     public float orthoMin = 3f; // Valor manimo para camaras ortograficas (usadas en 2D)
-    public float orthMax = 20f: // Valor maximo para camaras ortograficas 
+    public float orthMax = 20f; // Valor maximo para camaras ortograficas 
 
     private Camera cam; // Referencia a la camara en la que se hace zoom
     private float? lastDistance; // Guardia la distancia anterior entre los dos dedos
